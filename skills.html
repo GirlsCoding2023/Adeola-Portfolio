@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<style>
+  nav .active{
+    color: rgb(226, 65, 65);
+    padding: 0px;
+    border-bottom: 3px solid rgb(226, 65, 65);
+    height: 51px;
+}
+nav span:hover{
+    color: rgb(226, 65, 65);
+    height: 51px;
+}
+nav a>span:visited{
+    color: rgb(226, 65, 65) !important;
+    border-bottom: 3px solid rgb(226, 65, 65) !important;
+    padding-bottom: 8px !important;
+}
+.progress .determinate{
+    background-color: rgb(226, 65, 65) !important;
+    
+}
+</style>
+</head>
+<body>
+  
+  <header class="scrollspy" id="home">
+    <div class="navbar-fixed">
+    <nav class="black">
+        <div class="container">
+            <a href="#" class="sidenav-trigger" data-target="menu"><i class="material-icons" style="color: rgb(226, 65, 65);">menu</i></a>
+            <a href="#!" class="brand-logo"  style="color: rgb(226, 65, 65);">ADEOLA</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+                <li><a href="skills.html"><span>Skills</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+    <ul class="sidenav white" id="menu">
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="about.html"><span>About</span></a></li>
+        <li><a href="skills.html"><span>Skills</span></a></li>
+        <li><a href="contact.html"><span>Contact</span></a></li>
+    </ul>
+    </header>
+
+
+    <section class="container section ">
+        <section id="skills" class="scrollspy" style="padding-top: 80px; padding-bottom: 50px">
+            <h4 class="center-align">Skills</h4>
+            <div class="row">
+                <div class="col s12 l5">
+                    <p class="flow-text col l6">HTML</p>
+                    <p class="flow-text col l6 push-l1">95%</p>
+                    <div class="progress">
+                        <div class="determinate" style="width: 95%"></div>
+                    </div>
+                                  
+                </div>
+                <div class="col s12 l5 offset-l1">
+                    <p class="flow-text col l6">CSS</p>
+                    <p class="flow-text col l6 push-l1">75%</p>
+                    <div class="progress">
+                        <div class="determinate" style="width: 75%"></div>
+                    </div>
+                                      
+                </div>
+                <div class="col s12 l5">
+                    <p class="flow-text col l6">Materialize</p>
+                    <p class="flow-text col l6 push-l1">60%</p>
+                    <div class="progress">
+                        <div class="determinate" style="width: 60%"></div>
+                    </div>
+                                    
+                </div>
+                <div class="col s12 l5 offset-l1">
+                    <p class="flow-text col l6">JavaScript</p>
+                    <p class="flow-text col l6 push-l1">25%</p>
+                    <div class="progress">
+                        <div class="determinate" style="width: 25%"></div>
+                    </div>
+                                      
+                </div>
+                <div class="col s12 l5">
+                    <p class="flow-text col l6">Python</p>
+                    <p class="flow-text col l6 push-l1">25%</p>
+                    <div class="progress">
+                        <div class="determinate" style="width: 25%"></div>
+                    </div>
+                                      
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="page-footer grey darken-4">
+        
+        <div class="footer-copyright grey darken-4">
+          <div class="container">
+         <p class="center-align">&copy; copyright 2024. All rights reserved.</p>
+          
+          </div>
+        </div>
+     
+      </footer>
+  <script src="materialize/js/jquery.js"></script>
+  <script src="materialize/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+  
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+  
+    });
+  </script>
+</body>
+</html>

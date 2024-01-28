@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<style>
+  nav .active{
+    color: rgb(226, 65, 65);
+    padding: 0px;
+    border-bottom: 3px solid rgb(226, 65, 65);
+    height: 51px;
+}
+nav span:hover{
+    color: rgb(226, 65, 65);
+    height: 51px;
+}
+nav a>span:visited{
+    color: rgb(226, 65, 65) !important;
+    border-bottom: 3px solid rgb(226, 65, 65) !important;
+    padding-bottom: 8px !important;
+}
+</style>
+</head>
+<body>
+  
+  <header class="scrollspy" id="home">
+    <div class="navbar-fixed">
+    <nav class="black">
+        <div class="container">
+            <a href="#" class="sidenav-trigger" data-target="menu"><i class="material-icons" style="color: rgb(226, 65, 65);">menu</i></a>
+            <a href="#!" class="brand-logo"  style="color: rgb(226, 65, 65);">ADEOLA</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+                <li><a href="skills.html"><span>Skills</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+    <ul class="sidenav white" id="menu">
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="about.html"><span>About</span></a></li>
+        <li><a href="skills.html"><span>Skills</span></a></li>
+        <li><a href="contact.html"><span>Contact</span></a></li>
+    </ul>
+    </header>
+
+    <section class="container section">
+        <section class="scrollspy" id="about" style="padding-top: 80px; padding-bottom: 50px;">
+            <div class="row">
+              
+              <h4 class="center-align"> ABOUT ME</h4>
+                    <div class="col l4 ">
+                      <p><b>Age:</b> 16</p>
+                      <p><b>Education level:</b> Secondary Level</p>
+                      <P><b>Address:</b> No:2 abiye street Iwaya-Yaba Lagos State </P>
+                      <p><b>Country:</b> Nigeria</p>
+                      <p><b>Interests:</b> Volley ball</p>
+                      <p><b>Gender:</b> Female</p>
+                      <p><b>Mail: </b> adejumoayomide2007@gmail.com</p>
+                      <a class="btn center-align" href="contact.html" style="border-radius: 50px; background-color: rgb(226, 65, 65);">Send message</a>
+                      <br>
+                    </div>
+                    <div class="col l5 about push-l1 offset-l1">
+                        <h6  style="color: rgb(226, 65, 65); text-align:center">Hi! My name is adejumo adeola ayomide </h6>
+                        <p class="justify-align" style="text-align: justify;">I am a Software Developer, and I'm very passionate and dedicated to my work. I have acquired the skills and knowledge necessary to make projects a success. I enjoy seeing the finished product do everything for you that it was created to do, but I find the most satisfaction in solving problems with the use of technology i am a friendly person who like to to be with everybody i attended lagos city senior college at on 7 industrial avenue at sabo yaba lagos state  am a person who is positive about every aspect of life. There are many things I like to do, to see, and to experience. I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to listen.</p>
+    
+                    </div>
+                  </div>
+                    
+             
+        </section>
+    </section>
+
+
+    <footer class="page-footer grey darken-4">
+        
+        <div class="footer-copyright grey darken-4">
+          <div class="container">
+         <p class="center-align">&copy; copyright 2024. All rights reserved.</p>
+          
+          </div>
+        </div>
+     
+      </footer>
+  <script src="materialize/js/jquery.js"></script>
+  <script src="materialize/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+  
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+  
+    });
+  </script>
+</body>
+</html>

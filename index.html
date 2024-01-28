@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADEOLA Portfolio</title>
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<style>
+     header{
+      background-color: rgb(226, 65, 65);
+      background-size: cover;
+      background-position: center;
+      min-height: 790px;
+    }
+  nav .active{
+    color: rgb(226, 65, 65);
+    padding: 0px;
+    border-bottom: 3px solid rgb(226, 65, 65);
+    height: 51px;
+}
+nav span:hover{
+    color: rgb(226, 65, 65);
+    height: 51px;
+}
+nav a>span:visited{
+    color: rgb(226, 65, 65) !important;
+    border-bottom: 3px solid rgb(226, 65, 65) !important;
+    padding-bottom: 8px !important;
+}
+</style>
+</head>
+<body>
+  
+  <header class="scrollspy" id="home">
+    <div class="navbar-fixed">
+    <nav class="black">
+        <div class="container">
+            <a href="#" class="sidenav-trigger" data-target="menu"><i class="material-icons" style="color: rgb(226, 65, 65);">menu</i></a>
+            <a href="#!" class="brand-logo"  style="color: rgb(226, 65, 65);">ADEOLA</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+                <li><a href="skills.html"><span>Skills</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+    <ul class="sidenav white" id="menu">
+      <li><a href="index.html"><span>Home</span></a></li>
+      <li><a href="about.html"><span>About</span></a></li>
+      <li><a href="skills.html"><span>Skills</span></a></li>
+      <li><a href="contact.html"><span>Contact</span></a></li>
+    </ul>
+
+    <div class="container" id="home">
+      <div class="row">
+        <div class="hide-on-med-and-down col s12 m12 l6 white-text" style="margin-top: 150px;">
+          <h3 class="white-text text-darken-4">ADEJUMO ADEOLA</h3>
+          <p style="font-size: 25px;">Software Developer</p>
+          <a href="about.html" class="center-align btn-large black" style="border-radius: 50px">More</a>
+        </div>
+        <div class="hide-on-large-only col s12 m12 l6 white-text" style="margin-top: 50px;">
+          <h2 class="white-text text-darken-4 center-align" style="font-size: 23px; font-weight: bold;">ADEJUMO ADEOLA</h2>
+          <p style="font-size: 15px;" class="center-align">Software Developer</p>
+          <center><a href="about.html" class="center-align btn black" style="border-radius: 50px">More</a></center>
+        </div>
+        <div class="col s12 m12 l6 ">
+          <img src="ade.jpg" alt="" class="responsive-img materialboxed" style="margin-top: 50px; height: 590px; margin-bottom: 10px;">
+        </div>
+      </div>
+    </div>
+    </header>
+
+
+    <footer class="page-footer grey darken-4">
+        
+      <div class="footer-copyright grey darken-4">
+        <div class="container">
+       <p class="center-align">&copy; copyright 2024. All rights reserved.</p>
+        
+        </div>
+      </div>
+   
+    </footer>
+  <script src="materialize/js/jquery.js"></script>
+  <script src="materialize/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+  
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+  
+    });
+  </script>
+</body>
+</html>
